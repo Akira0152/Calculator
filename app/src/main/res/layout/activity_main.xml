@@ -9,14 +9,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:gravity="end"
+        android:padding="16dp"
         android:text=""
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="140dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
 
     <LinearLayout
         android:id="@+id/buttonsContainer"
@@ -24,10 +29,10 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginBottom="32dp"
-        android:textSize="54sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9">
 
         <LinearLayout
             style="?android:attr/buttonBarStyle"
